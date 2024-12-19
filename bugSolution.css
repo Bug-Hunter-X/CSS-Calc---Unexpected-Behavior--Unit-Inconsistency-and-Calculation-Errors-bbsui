@@ -1,0 +1,25 @@
+/* bugSolution.css */
+
+/* Correct usage of calc() with consistent units */
+.container {
+  width: calc(100vw - 100px);
+  /* Use consistent units (vw and px in this case) */
+}
+
+.element {
+  height: calc(50% - 25px);
+  /* Ensure consistent units */
+}
+
+/* Handle potential errors gracefully (fallback) */
+.element {
+  height: calc(50% - 25px);
+  height: 50%; /* Fallback if calc() fails */
+}
+
+/* Avoid complex calculations in calc() */
+.element {
+  width: 100px;
+  /* Simple, predictable width */
+}
+/*Avoid using calc() altogether when a simpler approach is possible.*/
